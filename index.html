@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft 1.21.10 | mc.coreycraft.ru</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Metal Mania', 'New Rocker', 'UnifrakturMaguntia', cursive, serif;
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+            /* 
+               Чтобы использовать свое изображение как фон на GitHub Pages:
+               1. Загрузите файл изображения в ваш репозиторий на GitHub
+               2. Замените 'background.jpg' на имя вашего файла
+               3. Убедитесь, что путь к файлу правильный
+            */
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .title {
+            font-size: 5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            text-shadow: 
+                0 0 5px #000,
+                0 0 10px #000,
+                0 0 15px #000,
+                0 0 20px #000,
+                0 0 25px #000,
+                0 0 30px #000,
+                0 0 40px #000;
+            letter-spacing: 4px;
+            line-height: 1.1;
+            filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.9));
+        }
+
+        .subtitle {
+            font-size: 2.8rem;
+            color: #ffffff;
+            text-shadow: 
+                0 0 5px #000,
+                0 0 10px #000,
+                0 0 15px #000,
+                0 0 20px #000,
+                0 0 25px #000;
+            letter-spacing: 3px;
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
+        }
+
+        /* Эффект старения/потускнения текста */
+        .title::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.05) 50%,
+                transparent 100%
+            );
+            pointer-events: none;
+        }
+
+        /* Медиа-запросы для адаптивности */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 3.5rem;
+                letter-spacing: 3px;
+            }
+            
+            .subtitle {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+            
+            .subtitle {
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+    
+    <!-- Подключение Black Metal шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=New+Rocker&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Minecraft 1.21.10</h1>
+        <h2 class="subtitle">mc.coreycraft.ru</h2>
+    </div>
+</body>
+</html>
